@@ -1,0 +1,58 @@
+html {
+}
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #000000;
+}
+.center-flex {
+}
+.center-margin {
+}
+.content {
+}
+.nav {
+}
+.nav-item {
+}
+.universal-header {
+}
+.universal-nav-header {
+}
+.universal-text {
+}
+.header {
+}
+.container {
+}
+.header__logo {
+}
+.header__img {
+}
+.header__nav-list {
+}
+.header__item {
+}
+.header__link {
+}
+.me {
+}
+.me__header {
+}
+.me__good {
+}
+.me__text {
+}
+/* 
+
+*/
+.footer {
+}
+.footer__nav-list {
+}
+.footer__item {
+}
+.footer__link {
+}
+.footer__copyright {
+  font-family: 'Manrope', sans-serif;
+}
