@@ -1,58 +1,126 @@
 html {
+  /* 10px */
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
 }
 body {
+  /* 16px */
+  /* font-size: 1.6rem; */
+  min-width: 1400px;
+  box-sizing: border-box;
   font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
   background: #000000;
 }
+h1,
+h2,
+h3,
+p,
+a {
+  color: #ffffff;
+  letter-spacing: -0.03em;
+}
 .center-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .center-margin {
+  margin: 0 auto;
 }
-.content {
-}
-.nav {
-}
-.nav-item {
-}
-.universal-header {
-}
-.universal-nav-header {
-}
-.universal-text {
-}
-.header {
+.text-center {
+  text-align: center;
 }
 .container {
+  width: 1150px;
+  margin: 0 125px;
+}
+
+.header {
+  width: 100%;
+  min-height: 765px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background:/*  linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+     */ url(../resources/img/png/header-bg.png)
+    0 0/100% auto no-repeat;
+  background-position: top;
+  /* transition: 0.5s; */
+  /* overflow: hidden; */
+}
+/* .header:hover {
+  transform: scale(1.02);
+  box-shadow: inset 0 2000px rgba(0, 0, 0, 0.17);
+} */
+.header__top-nav {
+  height: 55px;
+  padding: 27px 0 252px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .header__logo {
 }
-.header__img {
-}
 .header__nav-list {
+  display: flex;
+  flex-direction: row;
 }
 .header__item {
 }
+.header__item:not(:last-child) {
+  padding-right: 50px;
+}
+
 .header__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+  transition: 0.4s;
 }
-.me {
+.header__link:hover {
+  color: #1bff07;
 }
-.me__header {
+.header__what-i-do {
+  position: absolute;
+  width: 443px;
+  left: 125px;
+  bottom: 180px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 41px;
 }
-.me__good {
+.header__who-am-i {
+  position: absolute;
+  width: 443px;
+  left: 125px;
+  bottom: 40px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 700;
 }
-.me__text {
+.header__text {
 }
 /* 
 
 */
 .footer {
 }
-.footer__nav-list {
-}
-.footer__item {
-}
-.footer__link {
-}
 .footer__copyright {
   font-family: 'Manrope', sans-serif;
 }
+
+/* 
+
+*/
+
+/* 
+
+*/
