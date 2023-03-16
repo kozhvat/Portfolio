@@ -39,6 +39,10 @@ a {
   font-size: 55px;
   line-height: 72px;
 }
+.universal-text {
+  font-size: 22px;
+  line-height: 29px;
+}
 .header {
   margin-bottom: 151px;
   width: 100%;
@@ -118,7 +122,7 @@ a {
   color: #1bff07;
 }
 .projects {
-  margin-bottom: 150px;
+  margin-bottom: 150.6px;
 }
 .projects__header {
   margin: 0 0 40px -5px;
@@ -191,6 +195,67 @@ a {
 .projects__view-all-link:hover {
   color: #1bff07;
   background-color: #000000;
+}
+.competencies {
+  margin-bottom: 151px;
+}
+.competencies__header {
+  margin: 0 0 47px -2px;
+}
+.html::before {
+  content: '';
+  display: block;
+  margin: 0 0 11.5px 2px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/png/html-icon.png) no-repeat;
+}
+.js::before {
+  content: '';
+  display: block;
+  margin: 0 0 14.5px 2px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/png/js-icon.png) no-repeat;
+}
+.lib::before {
+  content: '';
+  display: block;
+  margin: 0 0 15.5px 2px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/png/lib-icon.png) no-repeat;
+}
+.react-native {
+  width: 651px;
+}
+.react-native::before {
+  content: '';
+  display: block;
+  margin: 0 0 15px 1px;
+  width: 45px;
+  height: 45px;
+  background: url(../resources/img/png/react-native-icon.png) no-repeat;
+}
+.competencies__list {
+  margin-left: -2px;
+}
+.competencies__item {
+}
+.competencies__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+.competencies__item:last-child {
+  margin-left: 1px;
+}
+.competencies__item-header {
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 46px;
+  color: #1bff07;
+}
+.competencies__item-text {
+  width: 778px;
 }
 /* 
 
