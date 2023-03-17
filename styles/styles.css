@@ -130,7 +130,6 @@ a {
 .projects__list {
   margin-bottom: 80px;
 }
-
 .projects__img {
   position: relative;
   width: 100%;
@@ -220,7 +219,6 @@ a {
   height: 45px;
   background: url(../resources/img/png/js-icon.png) no-repeat;
 }
-
 .lib::before {
   content: '';
   display: block;
@@ -277,7 +275,7 @@ a {
   margin-bottom: 74px;
 }
 .services__list > *:nth-child(2) {
-  margin-bottom: 137px;
+  margin-bottom: 136px;
 }
 .services__text-background {
   margin-top: -2px;
@@ -298,12 +296,24 @@ a {
 .services__list:nth-child(1) .services__item-text {
   width: 755px;
 }
-/* 
-
-*/
 .contacts {
+  margin-bottom: 150px;
   width: 1400px;
+  min-height: 717px;
   margin: 0 auto;
+  background: url(../resources/img/png/contacts-bg.png);
+}
+.contacts__header {
+  padding: 321px 0 28px 0;
+  font-size: 35px;
+  line-height: 60px;
+}
+.contacts__link {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
 }
 .footer {
 }
