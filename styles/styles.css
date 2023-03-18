@@ -16,6 +16,7 @@ h2,
 h3,
 p,
 a {
+  text-decoration: none;
   box-sizing: border-box;
   color: #ffffff;
   letter-spacing: -0.03em;
@@ -39,7 +40,7 @@ a {
   font-size: 55px;
   line-height: 72px;
 }
-.universal-text {
+.universal-description {
   font-size: 22px;
   line-height: 29px;
 }
@@ -67,23 +68,24 @@ a {
 } */
 .header__top-nav {
   height: 55px;
-  padding: 33px 0 246.7px 0;
+  padding: 32.7px 0 246.7px 0;
   display: flex;
   justify-content: space-between;
 }
-.header__surname-logo {
+.header__surname-bg {
   margin: 3px 0 0 -2px;
   min-width: 130px;
-  /* width: 191px;   для моей фамилии */
+  /* min-width: 191px;   для моей фамилии */
   height: 39px;
+  display: block;
   background: #000000;
   border-radius: 100px;
 }
-.header__surname-text {
+.header__surname {
   display: block;
-  margin: -3px 0 0 9px;
+  margin: -9px 0 0 9px;
   font-size: 42.4138px;
-  line-height: 42.4138px;
+  line-height: 55px;
   font-weight: 700;
   letter-spacing: -0.11em;
   text-transform: uppercase;
@@ -92,8 +94,6 @@ a {
 .header__nav-list {
   display: flex;
   flex-direction: row;
-}
-.header__item {
 }
 .header__item:not(:last-child) {
   padding-right: 51px;
@@ -122,46 +122,22 @@ a {
   color: #1bff07;
 }
 .projects {
-  margin-bottom: 150.6px;
+  margin-bottom: 151.6px;
 }
 .projects__header {
   margin: 0 0 40px -5px;
 }
 .projects__list {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
-.projects__img {
+.projects__link {
+  display: block;
   position: relative;
   width: 100%;
   height: 550px;
   border-radius: 30px;
 }
-.realhome {
-  margin-top: -1px;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.9) 100%
-    ),
-    url(../resources/img/png/realhome.png) no-repeat;
-}
-.glass {
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.9) 100%
-    ),
-    url(../resources/img/png/glass.png) no-repeat;
-}
-.fesiyen {
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.9) 100%
-    ),
-    url(../resources/img/png/fesiyen.png) no-repeat;
-}
-.projects__item-header {
+.projects__name {
   width: 430px;
   left: 50px;
   bottom: 94px;
@@ -169,7 +145,7 @@ a {
   font-size: 35px;
   line-height: 46px;
 }
-.projects__item-text {
+.projects__description {
   width: 445px;
   left: 50px;
   bottom: 50px;
@@ -203,7 +179,7 @@ a {
 .competencies__header {
   margin: 0 0 47px -2px;
 }
-.html::before {
+.html-css::before {
   content: '';
   display: block;
   margin: 0 0 11.5px 2px;
@@ -253,13 +229,13 @@ a {
 .competencies__item:last-child {
   margin-left: 1px;
 }
-.competencies__item-header {
+.competencies__name {
   margin-bottom: 15.2px;
   font-size: 35px;
   line-height: 46px;
   color: #1bff07;
 }
-.competencies__item-text {
+.competencies__description {
   width: 778px;
 }
 .services {
@@ -277,23 +253,23 @@ a {
 .services__list > *:nth-child(2) {
   margin-bottom: 136px;
 }
-.services__text-background {
+.services__background {
   margin-top: -2px;
   min-height: 283px;
   background: #191c19;
   border-radius: 30px;
 }
-.services__item-header {
+.services__name {
   padding: 40px 0 15px 40px;
   font-size: 55px;
   line-height: 72px;
   color: #1bff07;
 }
-.services__item-text {
+.services__description {
   width: 755px;
   padding: 0 0 40px 40px;
 }
-.services__list:nth-child(1) .services__item-text {
+.services__list:nth-child(1) .services__description {
   width: 755px;
 }
 .contacts {
