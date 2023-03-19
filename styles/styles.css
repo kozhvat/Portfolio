@@ -54,18 +54,15 @@ a {
   position: relative;
   background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.6) 100%
     ),
     url(../resources/img/png/header-bg.png) 0 0/100% auto no-repeat;
   background-position: top;
-  /* transition: 0.5s; */
-  /* overflow: hidden; */
 }
-/* .header:hover {
-  transform: scale(1.02);
-  box-shadow: inset 0 2000px rgba(0, 0, 0, 0.17);
-} */
+.header__about-me {
+  flex-direction: column;
+}
 .header__top-nav {
   height: 55px;
   padding: 32.7px 0 246.7px 0;
@@ -74,22 +71,28 @@ a {
 }
 .header__surname-bg {
   margin: 3px 0 0 -2px;
-  min-width: 130px;
-  /* min-width: 191px;   для моей фамилии */
+  /* min-width: 130px;   по макету */
+  min-width: 191px; /* для моей фамилии */
   height: 39px;
   display: block;
   background: #000000;
   border-radius: 100px;
+  box-shadow: 0px 0px 15px #971aff, 0px 0px 5px #971aff;
+  transition: 0.4s;
+}
+.header__surname-bg:hover {
+  box-shadow: 0px 0px 15px #971aff, 0px 0px 5px #971aff, 0px 0px 20px #971aff,
+    0px 0px 10px #971aff;
 }
 .header__surname {
   display: block;
   margin: -9px 0 0 9px;
-  font-size: 42.4138px;
-  line-height: 55px;
+  font-size: 42px;
+  line-height: 56.5px;
   font-weight: 700;
   letter-spacing: -0.11em;
   text-transform: uppercase;
-  color: #1bff07;
+  color: #971aff;
 }
 .header__nav-list {
   display: flex;
@@ -102,11 +105,16 @@ a {
   text-decoration: none;
   font-size: 18px;
   line-height: 23px;
+  font-weight: 700;
   cursor: pointer;
   transition: 0.4s;
+  text-shadow: 0px 0px 10px #971aff, 0px 0px 5px #971aff;
 }
 .header__link:hover {
-  color: #1bff07;
+  color: #c177ff;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px #000000, 0px 0px 15px #971aff, 0px 0px 5px #971aff;
 }
 .header__what-i-do {
   margin-bottom: 28px;
@@ -119,16 +127,19 @@ a {
   width: 919px;
   font-size: 80px;
   line-height: 70px;
-  color: #1bff07;
+  color: #971aff;
+  text-shadow: 0px 0px 20px #000000;
 }
 .projects {
   margin-bottom: 151.6px;
 }
 .projects__header {
   margin: 0 0 40px -5px;
+  text-shadow: 0px 0px 15px #ffffff;
 }
 .projects__list {
   margin-bottom: 78px;
+  overflow: hidden;
 }
 .projects__link {
   display: block;
@@ -136,6 +147,18 @@ a {
   width: 100%;
   height: 550px;
   border-radius: 30px;
+  transition: 0.5s;
+}
+.projects__link:hover {
+  opacity: 0.8;
+  transform: scale(1.012);
+}
+.projects__img {
+  width: 1150px;
+  height: 550px;
+  border-radius: 30px;
+  background: #000000;
+  opacity: 0.85;
 }
 .projects__name {
   width: 430px;
@@ -144,6 +167,7 @@ a {
   position: absolute;
   font-size: 35px;
   line-height: 46px;
+  text-shadow: 0px 0px 20px #000000;
 }
 .projects__description {
   width: 445px;
@@ -161,23 +185,25 @@ a {
   font-size: 30px;
   line-height: 151px;
   text-align: center;
-  border: 1px solid #1bff07;
   border-radius: 10px;
   text-decoration: none;
   color: #000000;
-  background-color: #1bff07;
+  background-color: #971aff;
   cursor: pointer;
   transition: 0.4s;
 }
 .projects__view-all-link:hover {
-  color: #1bff07;
+  color: #971aff;
   background-color: #000000;
+  box-shadow: inset 0px 0px 15px #971aff, 0px 0px 5px #971aff,
+    0px 0px 20px #971aff, 0px 0px 10px #971aff;
 }
 .competencies {
   margin-bottom: 150px;
 }
 .competencies__header {
   margin: 0 0 47px -2px;
+  text-shadow: 0px 0px 15px #ffffff;
 }
 .html-css::before {
   content: '';
@@ -233,7 +259,7 @@ a {
   margin-bottom: 15.2px;
   font-size: 35px;
   line-height: 46px;
-  color: #1bff07;
+  color: #971aff;
 }
 .competencies__description {
   width: 778px;
@@ -245,6 +271,7 @@ a {
   width: 403px;
   font-size: 35px;
   line-height: 46px;
+  text-shadow: 0px 0px 15px #ffffff;
 }
 .services__list > *:not(:last-child, :nth-child(2)),
 .services__header {
@@ -263,7 +290,7 @@ a {
   padding: 40px 0 15px 40px;
   font-size: 55px;
   line-height: 72px;
-  color: #1bff07;
+  color: #971aff;
 }
 .services__description {
   width: 755px;
@@ -283,6 +310,7 @@ a {
   padding: 320px 0 29px 0;
   font-size: 35px;
   line-height: 60px;
+  text-shadow: 0px 0px 15px #ffffff;
 }
 .contacts__link {
   display: block;
@@ -290,9 +318,11 @@ a {
   font-size: 60px;
   line-height: 60px;
   text-decoration: none;
+  transition: 0.4s;
 }
 .contacts__link:hover {
-  color: #1bff07;
+  color: #b255ff;
+  text-shadow: 0px 0px 15px #971aff, 0px 0px 5px #971aff;
 }
 .footer {
   min-height: 223px;
